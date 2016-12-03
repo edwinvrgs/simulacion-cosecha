@@ -11,7 +11,7 @@ Simulación con fines académicos usando el protocolo modbus
 ## Aclaratoria:
 Este repo también sirve para que ningún tercero se beneficie del código aquí sin el respectivo crédito a los autores
 
-## Integrantes:
+## Desarrolladores:
 - Nelson Zambrano (@)
 - Jonas Gonzalez (@)
 - Gregory Sanchez (@)
