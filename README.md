@@ -1,4 +1,4 @@
-# Cosecha super mainstream
+﻿# Cosecha super mainstream
 
 Simulación con fines académicos usando el protocolo modbus
 
@@ -13,7 +13,7 @@ Este repo también sirve para que ningún tercero se beneficie del código aquí
 
 ## Desarrolladores:
 - Nelson Zambrano (@nelxaz)
-- Jonas Gonzalez (@)
+- Jonas Gonzalez (@AlfredoJonas)
 - Gregory Sanchez (@sanchz93)
 - Anny Chacon (@)
 - José Cáceres (@joalcapa)
