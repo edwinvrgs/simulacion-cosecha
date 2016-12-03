@@ -1,4 +1,4 @@
-# Simulación de una cosecha con la mayor cantidad posible de procesos
+# Cosecha super mainstream
 
 Simulación con fines académicos usando el protocolo modbus
 
