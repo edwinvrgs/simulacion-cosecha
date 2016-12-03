@@ -14,6 +14,6 @@ Este repo también sirve para que ningún tercero se beneficie del código aquí
 ## Desarrolladores:
 - Nelson Zambrano (@nelxaz)
 - Jonas Gonzalez (@)
-- Gregory Sanchez (@)
+- Gregory Sanchez (@sanchz93)
 - Anny Chacon (@)
 - Edwin Vargas (@edwinvrgs)
