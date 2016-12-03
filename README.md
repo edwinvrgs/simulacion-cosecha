@@ -12,7 +12,7 @@ Simulación con fines académicos usando el protocolo modbus
 Este repo también sirve para que ningún tercero se beneficie del código aquí sin el respectivo crédito a los autores
 
 ## Desarrolladores:
-- Nelson Zambrano (@)
+- Nelson Zambrano (@nelxaz)
 - Jonas Gonzalez (@)
 - Gregory Sanchez (@)
 - Anny Chacon (@)
