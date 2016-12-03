@@ -1,3 +1,11 @@
+.fondo{
+	position: inherit;
+	left: 0px;
+	top: 0px;
+	height: 620px;
+	width: 1111px;
+}
+
 #cuadroIP{
 	position: absolute;
 	width: 367px;

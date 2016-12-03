@@ -35,47 +35,50 @@
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	</head>
 	<body>
-	<div class='banner'>
-		<img src='img/bannerPresentacion.png'>
-	</div>
-	<div class='cuadroPrincipal'>
-		<img src='img/tanque.png' class='tanque'>
-		<img src='img/agua.jpg' class='agua'>
-		<img src='img/tuberias.png' class='tuberias'>
-		<div class='bombaB1'>
-			<img src='img/bombaAgua.png'>
+	<div>
+		<img src='img/fondo.png' class="fondo">
+		<div class='banner'>
+			<img src='img/bannerPresentacion.png'>
 		</div>
-		<div class='bombaB2'>
-			<img src='img/bombaAgua.png'>
+		<div class='cuadroPrincipal'>
+			<img src='img/tanque.png' class='tanque'>
+			<img src='img/agua.jpg' class='agua'>
+			<img src='img/tuberias.png' class='tuberias'>
+			<div class='bombaB1'>
+				<img src='img/bombaAgua.png'>
+			</div>
+			<div class='bombaB2'>
+				<img src='img/bombaAgua.png'>
+			</div>
+			<div class="valvula">
+				<img src='img/valvulaCerrada.png'>
+			</div>
+			<img src='img/higrometroF.png' class='higrometro'>
+			<img src='img/higrometroA.png' class='aguja'>
+			<img src='img/termometroF.png' class='termometro'>
+			<img src='img/mercurio.jpg' class='mercurio'>
+			<div class='vivero'>
+				<img src='img/viveroLuzEncendida.png' class='imagenVivero'>
+			</div>
+			<form action="" method="post" name="formulario1" class='gad'>
+				<button type="submit" name="botonGadejo" class='botonGadejo'>
+					<img src='img/gadejo_on.png' class='gadejo'>
+				</button>
+			</form>
+			<div class="porcentajeTanque">
+				<p></p>
+			</div>
+			<div class="nivelHumedad">
+				<p></p>
+			</div>
+			<div class="centigrado">
+				<p></p>
+			</div>
+			<div class="fahrenheit">
+				<p></p>
+			</div>
+			<img src='img/grass.png' class='grass'>
 		</div>
-		<div class="valvula">
-			<img src='img/valvulaCerrada.png'>
-		</div>
-		<img src='img/higrometroF.png' class='higrometro'>
-		<img src='img/higrometroA.png' class='aguja'>
-		<img src='img/termometroF.png' class='termometro'>
-		<img src='img/mercurio.jpg' class='mercurio'>
-		<div class='vivero'>
-			<img src='img/viveroLuzEncendida.png' class='imagenVivero'>
-		</div>
-		<form action="" method="post" name="formulario1" class='gad'>
-			<button type="submit" name="botonGadejo" class='botonGadejo'>
-				<img src='img/gadejo_on.png' class='gadejo'>
-			</button>
-		</form>
-		<div class="porcentajeTanque">
-			<p></p>
-		</div>
-		<div class="nivelHumedad">
-			<p></p>
-		</div>
-		<div class="centigrado">
-			<p></p>
-		</div>
-		<div class="fahrenheit">
-			<p></p>
-		</div>
-		<img src='img/grass.png' class='grass'>
 	</div>
 	<script type="text/javascript" src="js/script.js"></script>
 	</body>
