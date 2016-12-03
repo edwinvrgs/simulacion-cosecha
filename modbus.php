@@ -44,6 +44,7 @@
 	}
 
 	//Leer del nodeMCU
+	//Se han modifiado ciertas entradas por falta de componentes
 	try {
 		$in_coils = $modbus->readCoils(0, 500, 1);
 

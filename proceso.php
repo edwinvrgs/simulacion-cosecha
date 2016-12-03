@@ -3,22 +3,15 @@
 	if(!isset($_SESSION["ip"])){
 		header("location:proceso.php");
 	}
-/*
-	if(isset($_POST["botonGadejo"])){
+
+/*	if(isset($_POST["botonGadejo"])){
 
 		require_once dirname(__FILE__) . '/Phpmodbus/ModbusMaster.php';
 		$modbus = new ModbusMaster($_SESSION["ip"], "TCP");
 
 		try {
 			$coilLuz = $modbus->readCoils(0, 508, 1);
-
-			if($coilLuz[0] == 1){
-				$coilLuz[0] = 0;
-			}else{
-				$coilLuz[0] = 1;
-			}
-
-			$modbus->writeSingleCoil(0, 508, $coilLuz);
+			$modbus->writeSingleCoil(0, 508, !$coilLuz);
 		} catch(Exception $e) {
 			echo $modbus;
 			echo $e;
