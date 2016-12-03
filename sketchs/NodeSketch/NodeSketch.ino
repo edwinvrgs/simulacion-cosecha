@@ -11,8 +11,6 @@ const int hin_count = 1;
 const int out_coils[5] = {503, 504, 505, 506, 507};
 const int cout_count = 5;
 
-long ts;
-
 //ModbusIP object
 ModbusIP mb;
 
@@ -31,8 +29,6 @@ void setup() {
   for (int i = 0; i < hin_count; i++) {
     mb.addHreg(in_hreg[i]);
   }
-
-  ts = millis();
 }
 
 void loop() {
