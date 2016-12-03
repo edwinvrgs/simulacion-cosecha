@@ -16,4 +16,5 @@ Este repo también sirve para que ningún tercero se beneficie del código aquí
 - Jonas Gonzalez (@)
 - Gregory Sanchez (@sanchz93)
 - Anny Chacon (@)
+- José Cáceres (@joalcapa)
 - Edwin Vargas (@edwinvrgs)
