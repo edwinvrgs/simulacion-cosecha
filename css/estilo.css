@@ -1,0 +1,201 @@
+#cuadroIP{
+	position: absolute;
+	width: 367px;
+	top: 50%;
+	left: 50%;
+	margin-top: -175px;
+	margin-left: -183.5px;
+	background-color: #F9F9F9;
+	border-radius: 10px;
+	padding-bottom: 10px;
+	border-color: #9FA0A0;
+	border-width: thin;
+	border-style: solid;
+}
+
+.cuadroRellenar{
+  position: inherit;
+  margin-left: 19px;
+  width: 322px;
+  height: 24px;
+}
+
+.textos{
+  margin-top: 10px;
+  margin-left: 19px;
+  margin-bottom: 10px;
+}
+
+.boton{
+	border-color: #9FA0A0;
+  border-width: thin;
+  border-style: solid;
+  background-color: #C7E1E2;
+  width: 132px;
+  height: 30px;
+  text-align: center;
+  color: #666659;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-left: 115px;
+}
+
+.boton:hover{
+    background-color: #9FCDCE;
+}
+
+.gad{
+	position: inherit;
+	left: 613px;
+	top: 343px;
+}
+
+.botonGadejo{
+	background-color: white;
+	border-style: none;
+}
+
+
+.gadejo{
+	width: 70px;
+	height: 97px;
+}
+
+.banner{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+.cuadroPrincipal{
+	position: absolute;
+	left: 0px;
+	top: 130px;
+}
+
+.tanque{
+	position: inherit;
+	left: 95px;
+	top: 44px;
+}
+
+.grass{
+	position: inherit;
+	left: 0px;
+	top: 474px;
+}
+
+.tuberias{
+	position: inherit;
+	left: 0px;
+	top: 8px;
+}
+
+.agua{
+	position: inherit;
+	left: 159px;
+	top: 116px;
+	width: 41px;
+}
+
+.mercurio{
+	position: inherit;
+	left: 881px;
+	top: 110px;
+	width: 23px;
+}
+
+.bombaB1{
+	position: inherit;
+	left: 379px;
+	top: 301px;
+}
+
+.bombaB2{
+	position: inherit;
+	left: 379px;
+	top: 404px;
+}
+
+.valvula{
+	position: absolute;
+	left: 57px;
+	top: 1px;
+}
+
+.higrometro{
+	position: inherit;
+	width: 242px;
+	height: 242px;
+	left: 272px;
+	top: 47px;
+}
+
+.aguja{
+	position: inherit;
+	width: 242px;
+	height: 242px;
+	left: 272px;
+	top: 47px;
+}
+
+.termometro{
+	position: inherit;
+	width: 157px;
+	height: 405px;
+	left: 812px;
+	top: 61px;
+}
+
+.vivero{
+	position: inherit;
+	left: 525px;
+	top: 63px;
+}
+
+.imagenVivero{
+	position: inherit;
+	width: 276px;
+	height: 276px;
+}
+
+.porcentajeTanque{
+	position: inherit;
+	left: 102px;
+	top: 240px;
+	font-size: 20px;
+	color: white;
+}
+
+.nivelHumedad{
+	position: inherit;
+	left: 377px;
+	top: 215px;
+	font-size: 20px;
+	color: #462300;
+	width: 32px;
+	height: 18px;
+	text-align: center;
+}
+
+.fahrenheit{
+	position: inherit;
+	left: 825px;
+	top: 403px;
+	font-size: 19px;
+	color: #462300;
+	width: 32px;
+	height: 18px;
+	text-align: center;
+}
+
+.centigrado{
+	position: inherit;
+	left: 927px;
+	top: 403px;
+	font-size: 19px;
+	color: #462300;
+	width: 32px;
+	height: 18px;
+	text-align: center;
+}
