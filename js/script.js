@@ -117,7 +117,7 @@ function Actualizar(salidaS = null) {
 				default:
 				break;
 			}
-
+				
         Actualizar(salida);
 
 	  } else {
