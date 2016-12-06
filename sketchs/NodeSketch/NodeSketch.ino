@@ -3,10 +3,10 @@
 #include <ModbusIP_ESP8266.h>
 
 const int in_coils[3] = {500, 501, 502};
-const int cin_count = 1;
+const int cin_count = 3;
 
 const int in_hreg[3] = {509, 510, 511};
-const int hin_count = 1;
+const int hin_count = 3;
 
 const int out_coils[5] = {503, 504, 505, 506, 507};
 const int cout_count = 5;

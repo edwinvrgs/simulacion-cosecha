@@ -49,8 +49,8 @@
 		$in_coils = $modbus->readCoils(0, 500, 1);
 
 		$tanque = $modbus->readMultipleRegisters(0, 509, 4);
-		//$termometro = $modbus->readMultipleRegisters(0, 510, 4);
-		//$higrometro = $modbus->readMultipleRegisters(0, 511, 4);
+		$termometro = $modbus->readMultipleRegisters(0, 510, 4);
+		$higrometro = $modbus->readMultipleRegisters(0, 511, 4);
 
 		$out_coils = $modbus->readCoils(0, 503, 5);
 
@@ -62,8 +62,8 @@
 
 	$data[] = array(
 				"sensorB1"=> $in_coils[0],
-				//"sensorB2"=> $coils[1],
-				//"valvula" => $coils[2],
+				"sensorB2"=> $coils[1],
+				"valvula" => $coils[2],
 
 				"bombaB1" => $out_coils[0],
 				"bombaB2" => $out_coils[1],
@@ -72,9 +72,9 @@
 				"estado_tanque" => $out_coils[4],
 				//"luz" => $coils[8],
 
-				"tanque" => $tanque[0]*255 + $tanque[1]
-				//"termometro" => $termometro[0]*255+$termometro[1],
-				//"higrometro" => $higrometro[0]*255+$higrometro[1]
+				"tanque" => $tanque[0]*255 + $tanque[1],
+				"termometro" => $termometro[0]*255+$termometro[1],
+				"higrometro" => $higrometro[0]*255+$higrometro[1]
 			);
 
 	echo json_encode($data);
