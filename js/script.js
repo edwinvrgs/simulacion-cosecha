@@ -2,12 +2,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	Actualizar();
 });
 
-function Actualizar(salidaS = "") {
+function Actualizar(salidaS = null) {
 
 	var request = new XMLHttpRequest();
 	request.open('POST', 'modbus.php', true);
 	request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 	request.responseType = "json";
+
+	request.send(salidaS);
 
 	request.onload = function() {
 	  if (request.status >= 200 && request.status < 400) {
@@ -76,6 +78,8 @@ function Actualizar(salidaS = "") {
 			else
 				document.querySelector(".valvula").innerHTML = "<img src='img/valvulaCerrada.png'>";
 
+            console.log(salida);
+
 			var salida = "estado_temperatura="+estado_temperatura+"&estado_higrometro="+estado_higrometro+"&estado_tanque="+estado_tanque;
 
 			//estado del sensor bomba 1
@@ -114,7 +118,7 @@ function Actualizar(salidaS = "") {
 				break;
 			}
 
-			Actualizar(salida);
+        Actualizar(salida);
 
 	  } else {
 	  	alert("Error en el servidor");
@@ -125,7 +129,6 @@ function Actualizar(salidaS = "") {
 	  	alert("Error en la peticion");
 	};
 
-	request.send(null);
 };
 
 function actualizarMedidores(nivAgua, nivTemp, nivHum) {
