@@ -64,7 +64,7 @@ function Actualizar(salidaS = null) {
 				bomb2 = 0;
 
 
-			if(data.luz){
+			if(!data.luz){
 				document.querySelector(".vivero").innerHTML = "<img class='imagenVivero' src='img/viveroLuzEncendida.png'>";
 				document.querySelector(".botonGadejo").innerHTML = "<img src='img/gadejo_on.png' class='gadejo'>";
 			}else{
@@ -77,8 +77,6 @@ function Actualizar(salidaS = null) {
 				document.querySelector(".valvula").innerHTML = "<img src='img/valvulaAbierta.png'>";
 			else
 				document.querySelector(".valvula").innerHTML = "<img src='img/valvulaCerrada.png'>";
-
-            console.log(salida);
 
 			var salida = "estado_temperatura="+estado_temperatura+"&estado_higrometro="+estado_higrometro+"&estado_tanque="+estado_tanque;
 
@@ -117,8 +115,10 @@ function Actualizar(salidaS = null) {
 				default:
 				break;
 			}
-				
-        Actualizar(salida);
+
+			setTimeout(function() {
+				Actualizar(salida);
+			}, 50);
 
 	  } else {
 	  	alert("Error en el servidor");

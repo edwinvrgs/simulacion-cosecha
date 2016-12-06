@@ -17,7 +17,7 @@ ModbusIP mb;
 void setup() {
   Serial.begin(115200);
 
-  mb.config("SSID", "PASSWORD");
+  mb.config("Onix", "180196260499");
   while (WiFi.status() != WL_CONNECTED) { delay(250); }
   Serial.println(WiFi.localIP());
 

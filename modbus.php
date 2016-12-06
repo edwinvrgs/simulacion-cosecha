@@ -46,11 +46,11 @@
 	//Leer del nodeMCU
 	//Se han modifiado ciertas entradas por falta de componentes
 	try {
-		$in_coils = $modbus->readCoils(0, 500, 1);
+		$in_coils = $modbus->readCoils(0, 500, 3);
 
-		$tanque = $modbus->readMultipleRegisters(0, 509, 4);
-		$termometro = $modbus->readMultipleRegisters(0, 510, 4);
-		$higrometro = $modbus->readMultipleRegisters(0, 511, 4);
+		$tanque = $modbus->readMultipleRegisters(0, 509, 5);
+		$termometro = $modbus->readMultipleRegisters(0, 510, 5);
+		$higrometro = $modbus->readMultipleRegisters(0, 511, 5);
 
 		$out_coils = $modbus->readCoils(0, 503, 5);
 
@@ -61,9 +61,9 @@
 	}
 
 	$data[] = array(
-				"sensorB1"=> $in_coils[0],
-				"sensorB2"=> $coils[1],
-				"valvula" => $coils[2],
+				"sensorB1" => $in_coils[0],
+				"sensorB2" => $in_coils[1],
+				"valvula" => $in_coils[2],
 
 				"bombaB1" => $out_coils[0],
 				"bombaB2" => $out_coils[1],
