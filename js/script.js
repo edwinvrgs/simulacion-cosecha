@@ -17,11 +17,12 @@ function Actualizar(salidaS = null) {
 			var data = request.response[0];
 
 			//mostrar valor de los sensores analogicos
-			actualizarMedidores(data.tanque, data.termometro, data.higrometro);
+			actualizarMedidores(data.tanque, data.termometro, data.higrometro, data.valvula);
 
 			//conversion a valores reales
 			var temperatura = (data.termometro*90/1024)-40;
-			var agua = (data.tanque*100/1024);
+			if(data.valvula)
+				var agua = (data.tanque*100/1024);
 			var humedad = (data.higrometro*80/1024)+20;
 			var bomb1 = 2;
 			var bomb2 = 2;
@@ -131,9 +132,10 @@ function Actualizar(salidaS = null) {
 
 };
 
-function actualizarMedidores(nivAgua, nivTemp, nivHum) {
+function actualizarMedidores(nivAgua, nivTemp, nivHum, valvula) {
 	var cant = 157-(157*nivAgua/1024);
-	document.querySelector(".agua").height = cant;
+	if(data.valvula)
+		document.querySelector(".agua").height = cant;
 	cant = 285-(285*nivTemp/1024);
 	document.querySelector(".mercurio").height = cant;
 	cant = 285*nivHum/(1024);
