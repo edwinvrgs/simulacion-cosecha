@@ -1,3 +1,4 @@
+//Declaracion de todos los pins, de entrada y salida
 const int digital_in[3] = {2, 3, 4};
 const int din_count = 3;
 
@@ -31,6 +32,13 @@ void loop() {
 
   //Buffer de datos
   int data = 0;
+
+   //Con el Serial.println(data), se esta enviando la variable "data"
+   //al nodeMCU mediante el metodo Serial
+
+   //Con el Serial.parseInt() se lee lo que haya en el el serial y se transforma en entero
+
+   //El while(Serial.parseInt() != data){} fue para cuestiones de sincronizacion
 
   //Entrada digital
   for (int i = 0; i < din_count; i++) {

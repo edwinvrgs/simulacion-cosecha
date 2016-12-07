@@ -2,6 +2,7 @@
 #include <Modbus.h>
 #include <ModbusIP_ESP8266.h>
 
+//Declaracion de todos los registros, coils y hregs
 const int in_coils[3] = {500, 501, 502};
 const int cin_count = 3;
 
@@ -17,15 +18,18 @@ ModbusIP mb;
 void setup() {
   Serial.begin(115200);
 
-  mb.config("Onix", "180196260499");
+  //Conexion con la red en cuestion
+  mb.config("SSID", "PASSWORD");
   while (WiFi.status() != WL_CONNECTED) { delay(250); }
   Serial.println(WiFi.localIP());
 
+  //Inicializacion de los registros digitales
   for (int i = 0, j = 0; i < cin_count, j < cout_count; i++, j++) {
     mb.addCoil(in_coils[i]);
     mb.addCoil(out_coils[j]);
   }
 
+  //Inicializacion de los registros analogicos
   for (int i = 0; i < hin_count; i++) {
     mb.addHreg(in_hreg[i]);
   }
@@ -35,6 +39,13 @@ void loop() {
 
    mb.task();
    int data = 0;
+
+    //Con el Serial.println(data), se esta enviando la variable "data"
+    //al arduino mediante el metodo Serial
+
+    //Con el Serial.parseInt() se lee lo que haya en el el serial y se transforma en entero
+
+    //El while(Serial.parseInt() != data){} fue para cuestiones de sincronizacion
 
    if (Serial.available()) {
 
